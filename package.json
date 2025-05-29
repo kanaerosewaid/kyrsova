@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "install-all": "yarn --cwd backend install && yarn --cwd frontend install",
+    "build-all": "yarn --cwd frontend build",
+    "start-backend": "yarn --cwd backend start",
+    "start-frontend": "yarn --cwd frontend start",
+    "start": "concurrently \"yarn start-backend\" \"yarn start-frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
